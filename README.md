@@ -7,9 +7,9 @@ using aircrack-ng.
 
 Debian systems:
 ```bash
-$ sudo apt-get update
-$ git clone https://github.com/yodamaster-code/evil-twin
-$ sudo apt-get install aircrack-ng
+sudo apt-get update
+git clone https://github.com/yodamaster-code/evil-twin
+sudo apt-get install aircrack-ng
 ```
 
 ## Important notes
@@ -18,18 +18,18 @@ $ sudo apt-get install aircrack-ng
 2. This attack requires sudo privileges on the local machine.
 
 To find and put your wireless device in monitor mode do the following:
-1. ```bash $ airmon-ng check kill ``` to kill all the interfering processes.
-2. ```bash $ iwconfig ```to list all your wireless interfaces.
-3. ```bash $ sudo airmon-ng start wlan0 ```(my interface is wlan0, you should put yours).
-Now you do ```bash $ iwconfig ```and see that the mode is set to monitor mode
+1. ```airmon-ng check kill``` to kill all the interfering processes.
+2. ```iwconfig``` to list all your wireless interfaces.
+3. ```sudo airmon-ng start wlan0``` (my interface is wlan0, you should put yours).
+Now you do ```iwconfig``` and see that the mode is set to monitor mode
 
 To put your wireless device back in manged mode do the following:
-1. ```bash $ sudo airmon-ng stop wlan0mon.
+1. sudo airmon-ng stop wlan0mon
 
 ## Usage
 
 evil-twin.sh bssid essid interface{monitor mode} channel client{optional}
-```bash [+] example: ./evil-twin.sh 00:0b:86:c1:af:35 yodanet wlan0mon 2```
+```[+] example: ./evil-twin.sh 00:0b:86:c1:af:35 yodanet wlan0mon 2```
 
 ## Disclamer
 
