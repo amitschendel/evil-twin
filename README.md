@@ -24,11 +24,11 @@ To find and put your wireless device in monitor mode do the following:
 Now you can do ```iwconfig``` and see that the mode is set to monitor mode
 
 To put your wireless device back in manged mode do the following:
-1. sudo airmon-ng stop wlan0mon
+1. ```sudo airmon-ng stop wlan0mon```
 
 ## Usage
 
-evil-twin.sh bssid essid interface{monitor mode} channel client{optional}
+evil-twin.sh bssid essid interface{monitor mode} channel client{optional}<br/>
 ```[+] example: ./evil-twin.sh 00:0b:86:c1:af:35 yodanet wlan0mon 2```
 
 ## Disclamer
