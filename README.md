@@ -20,8 +20,8 @@ sudo apt-get install aircrack-ng
 To find and put your wireless device in monitor mode do the following:
 1. ```airmon-ng check kill``` to kill all the interfering processes.
 2. ```iwconfig``` to list all your wireless interfaces.
-3. ```sudo airmon-ng start wlan0``` (my interface is wlan0, you should put yours).
-Now you do ```iwconfig``` and see that the mode is set to monitor mode
+3. ```sudo airmon-ng start wlan0``` (my interface is wlan0, you should put yours).<br/>
+Now you can do ```iwconfig``` and see that the mode is set to monitor mode
 
 To put your wireless device back in manged mode do the following:
 1. sudo airmon-ng stop wlan0mon
